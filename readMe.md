@@ -33,3 +33,11 @@ npm install --save-dev @babel/node@7.0.0 //compile babel within the commandline
 @babel/preset-react@7.0.0 //compile react
 @babel/register@7.0.0 //it is dependency needed for many babel features to work 
 
+create .babelrc file to define how  .jsx   and es6 should be handled
+(it is a json file that babel will check on how to run )
+-> create a webpack.config.js file on how to bundle our app 
+files created until now 
+.babelrc
+webpack.config.js 
+./src/app/index.js
+created a start script = "webpack"
