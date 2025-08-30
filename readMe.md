@@ -41,3 +41,6 @@ files created until now
 webpack.config.js 
 ./src/app/index.js
 created a start script = "webpack"
+redux manages the data that underlies your application 
+application state can be easily accessed 
+redux state is provided to react components via react-redux a small connector library 
