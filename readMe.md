@@ -44,3 +44,9 @@ created a start script = "webpack"
 redux manages the data that underlies your application 
 application state can be easily accessed 
 redux state is provided to react components via react-redux a small connector library 
+steps in using the redux 
+1 - create a default application state using a json file 
+server/defaultState.js
+store/index.js
+
+index.js till line 4
