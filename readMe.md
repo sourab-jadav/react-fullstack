@@ -119,3 +119,34 @@ we are going to update the reducer in our store in such a way that
 ## passing function or dispatcher as prop
 add button in the components/TaskList.jsx that adds task to the tasklist
 see the changes from 31 to 67 in the tasklist.jsx
+## let's create a template for all the changes to an application state that you might want to do
+
+the template is the file /store/mutation.js line 1 to 22
+line 104 and line 74 in TaskList.jsx
+
+do the following installs:-
+npm install --save redux-logger@3.0.6 redux-saga@0.16.2
+
+to help figure what is going on we want to add some logging for the stores hash 
+/store/index.js 
+    for create logger to work we have to add second argument to the createstore
+    import createLogger(redux-logger) and applyMiddleware(redux)
+
+usually actions change the state of the application 
+however actions that require any kind of randomness like taskcreation we need somekind of intermediary in other words saga so let's add saga 
+
+/store/saga.mock.js
+npm install --save uuid
+
+/store/index.js
+
+
+so far when you click the add task button requestTastCreation func will be called
+with groupId passed as argument 
+this function returns an object mutation of type TASKCREATION 
+
+to make task we use taskCreationSaga
+which allows us to take the values from the mutation using take 
+and put the values to the mutation using put keyword which are sent to the store as action object
+once store is updated the logger will log the new action object to the browser console
+
