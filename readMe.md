@@ -66,3 +66,20 @@ connected components inside this provider will have access to this store
 - see the changes in dashboard.jsx line 53 to 59
 - TaskList.jsx line 12 to 21
 - Main.jsx line 23 to 28
+## Routing 
+
+- let's add Routing capabilities to the Main.jsx 
+
+` npm install react-router-dom@4.3.1 --save `
+
+- if you don't specify save this could create problems when you are deploying site 
+
+` npm install --save history@4.7.2`
+
+create new file called history.js 
+import a method called createBrowserHistory from 'history'
+this is used by react router to see what it is now and what was in the past 
+add Route to the ConnectedDashboardComponent 
+
+- files 
+Main.jsx line 33 to 51
