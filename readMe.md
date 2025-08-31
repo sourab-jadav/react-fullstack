@@ -50,3 +50,13 @@ server/defaultState.js
 store/index.js
 
 index.js till line 4
+----------creating a dashboard component------
+create file ./src/app/components/Dashboard.js
+and export the component Dashboard 
+import it into ./src/app/components/Main.jsx and render the component into the html file using 
+React and ReactDOM libraries 
+-------- let's now use react rredux to connect the rreduux store too dashboard
+
+make a new componeent called main.jsx
+Provider is an element in react redux that takes store as an argument and any
+connected components inside this provider will have access to this store 
