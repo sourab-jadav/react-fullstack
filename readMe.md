@@ -60,3 +60,9 @@ React and ReactDOM libraries
 make a new componeent called main.jsx
 Provider is an element in react redux that takes store as an argument and any
 connected components inside this provider will have access to this store 
+-- now that we have the provider and store we take the data from the store and 
+    connect it to the component using the connect function so that it can receive as props
+
+- see the changes in dashboard.jsx line 53 to 59
+- TaskList.jsx line 12 to 21
+- Main.jsx line 23 to 28
