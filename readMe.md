@@ -83,3 +83,7 @@ add Route to the ConnectedDashboardComponent
 
 - files 
 Main.jsx line 33 to 51
+## working on the navigation
+
+make a new file components/Navigation.jsx  line 1 to 14 
+components/Main.jsx line 55 to line 75
