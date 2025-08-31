@@ -87,3 +87,35 @@ Main.jsx line 33 to 51
 
 make a new file components/Navigation.jsx  line 1 to 14 
 components/Main.jsx line 55 to line 75
+now that the navigation let's allow the users to make first impact on the app by adding tasks 
+
+we are going to update the reducer in our store in such a way that 
+- reducer must be updated to allow tasks array to be changed 
+- tasks needs random id ,reducer's can't be random so we use saga or thunk for that 
+
+- saga is something that runs in the background of the redux application 
+  respond to actions by generating side-effects
+
+  saga's are denoted by function* -> which is not usually found 
+  so all saga's we see are generators 
+
+  generator is a type of js function which return many difference value each time it is called
+
+
+  eg:- a while true loop would normally cause a crash
+        is acceptable inside the generator function as long as there is yield keyword in it 
+
+        yield keyword is accepted to generate certain value and wait util the generator is called again
+
+        function* myGenerator(){
+            let meaning =42;
+            while(true){
+                meaning+=1;
+                yield meaning;
+            }
+        }
+
+### let's create a mock saga that creates random task id for each task
+## passing function or dispatcher as prop
+add button in the components/TaskList.jsx that adds task to the tasklist
+see the changes from 31 to 67 in the tasklist.jsx
